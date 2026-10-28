@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "packetshield",
+  "version": "${version}",
+  "name": "PacketShield",
+  "description": "Reconnects after non-ban server disconnects and can request a position restore.",
+  "authors": ["PacketShield"],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["dev.packetshield.PacketShieldServer"],
+    "client": ["dev.packetshield.PacketShieldClient"],
+    "modmenu": ["dev.packetshield.PacketShieldModMenu"]
+  },
+  "mixins": ["packetshield.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": { "modmenu": "*" }
+}

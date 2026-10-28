@@ -1,0 +1,7 @@
+{
+  "required": true,
+  "package": "dev.packetshield.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": ["ClientCommonNetworkHandlerMixin", "MinecraftClientMixin", "ClientPlayNetworkHandlerMixin", "ClientPlayerEntityMixin", "ClientWorldAccessor", "WorldPropertiesAccessor", "ClientWorldTimeMixin", "ConnectScreenInvoker", "ScreenAccessor", "GameMenuScreenMixin", "ClientWorldFallbackSyncMixin", "BlockItemFallbackSyncMixin", "ClientPlayerInteractionFallbackMixin"],
+  "injectors": { "defaultRequire": 1 }
+}
